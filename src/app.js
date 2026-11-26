@@ -286,8 +286,8 @@ function renderProfile() {
       <p class="save-note" data-profile-notice>${esc(state.profileNotice)}</p>
     </article>
     <article class="panel">
-      <h2>${esc(text.advancedProfile)}</h2>
-      <textarea class="profile-json" data-profile-json spellcheck="false">${esc(JSON.stringify(state.profile, null, 2))}</textarea>
+      <h2 id="profile-json-title">${esc(text.advancedProfile)}</h2>
+      <textarea class="profile-json" data-profile-json aria-labelledby="profile-json-title" spellcheck="false">${esc(JSON.stringify(state.profile, null, 2))}</textarea>
       <div class="button-row">
         <button class="button secondary" data-action="import-profile">${esc(text.importProfile)}</button>
         <button class="button primary" data-action="fill-from-profile">${esc(text.fillFromProfile)}</button>
