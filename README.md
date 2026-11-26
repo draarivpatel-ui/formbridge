@@ -129,7 +129,7 @@ scripts/browser-check.mjs real headless-Chrome UI smoke test
 scripts/capture-screenshots.mjs
 assets/                   1440 by 900 demo captures
 test/                     node:test deterministic tests
-video/                    narration script, steps and rendered demo assets
+video/                    narration script and capture steps; rendered media is git-ignored
 ```
 
 ## AI disclosure
