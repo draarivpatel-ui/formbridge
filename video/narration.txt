@@ -1,0 +1,13 @@
+FormBridge is an offline plain-language helper for paper school and benefit forms. The sample is fictional. Dense wording can stop a family that already knows the answer.
+
+Each form definition carries the original question, a plain rewrite, its reason, validation rules, and English and Spanish labels. The reading audit flags hard wording.
+
+A saved household profile fills the form once. Nothing is sent to a server. Each answer is checked with one specific message.
+
+The guided review slows the form down. Every answer appears with the original wording, the plain question, its reason, and a place to fix it.
+
+Spanish is part of the same workflow. One toggle changes labels, help, validation, review text, and the print footer.
+
+When every answer is confirmed, FormBridge prepares a clean filled copy. A separate page explains what the signature means and what it does not guarantee.
+
+FormBridge is not legal advice and cannot decide eligibility. It is a deterministic bridge between dense forms and the families asked to complete them.

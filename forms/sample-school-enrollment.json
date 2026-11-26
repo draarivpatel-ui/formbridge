@@ -1,0 +1,620 @@
+{
+  "id": "sample-school-enrollment",
+  "version": 1,
+  "meta": {
+    "title": {
+      "en": "Fictional Example School Enrollment Form",
+      "es": "Formulario ficticio de inscripción escolar de ejemplo"
+    },
+    "summary": {
+      "en": "A made-up school enrollment packet used only to demonstrate FormBridge. It is not accepted by any school or agency.",
+      "es": "Un paquete inventado de inscripción escolar que solo sirve para demostrar FormBridge. Ninguna escuela ni agencia lo acepta."
+    },
+    "audience": {
+      "en": "Families and helpers practicing with a fictional school form",
+      "es": "Familias y personas que ayudan, practicando con un formulario escolar ficticio"
+    },
+    "fictionalNotice": {
+      "en": "Fictional sample only. Do not submit this copy to a school or agency.",
+      "es": "Ejemplo ficticio solamente. No entregue esta copia a una escuela ni a una agencia."
+    }
+  },
+  "printFooter": {
+    "en": "FormBridge fictional demonstration copy. Check the issuing office's real instructions. Not legal advice.",
+    "es": "Copia ficticia de demostración de FormBridge. Revise las instrucciones reales de la oficina correspondiente. No es asesoría legal."
+  },
+  "sections": [
+    {
+      "id": "student",
+      "label": {
+        "en": "Student information",
+        "es": "Información del estudiante"
+      }
+    },
+    {
+      "id": "household",
+      "label": {
+        "en": "Household information",
+        "es": "Información del hogar"
+      }
+    },
+    {
+      "id": "caregiver",
+      "label": {
+        "en": "Caregiver contact",
+        "es": "Contacto del cuidador"
+      }
+    },
+    {
+      "id": "signing",
+      "label": {
+        "en": "Permission and signature",
+        "es": "Permiso y firma"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "id": "student_first_name",
+      "type": "text",
+      "section": "student",
+      "required": true,
+      "profileKey": "student.firstName",
+      "maxLength": 40,
+      "label": {
+        "en": "Student legal first name",
+        "es": "Primer nombre legal del estudiante"
+      },
+      "question": {
+        "en": "Provide the legal given name of the student exactly as it appears on governmental identification or foundational enrollment documentation.",
+        "es": "Proporcione el nombre legal del estudiante exactamente como aparece en la identificación gubernamental o en la documentación básica de inscripción."
+      },
+      "plain": {
+        "en": "What is the student's legal first name?",
+        "es": "¿Cuál es el primer nombre legal del estudiante?"
+      },
+      "why": {
+        "en": "The school uses it to match the student with the correct record.",
+        "es": "La escuela lo usa para relacionar al estudiante con el expediente correcto."
+      },
+      "help": {
+        "en": "Use the name on the birth certificate or other legal document if you have it.",
+        "es": "Use el nombre del certificado de nacimiento u otro documento legal, si lo tiene."
+      },
+      "printLabel": {
+        "en": "Student first name",
+        "es": "Primer nombre del estudiante"
+      }
+    },
+    {
+      "id": "student_last_name",
+      "type": "text",
+      "section": "student",
+      "required": true,
+      "profileKey": "student.lastName",
+      "maxLength": 40,
+      "label": {
+        "en": "Student legal last name",
+        "es": "Apellido legal del estudiante"
+      },
+      "question": {
+        "en": "Provide the legal family name or surname of the student exactly as it appears on foundational enrollment documentation.",
+        "es": "Proporcione el apellido legal del estudiante exactamente como aparece en la documentación básica de inscripción."
+      },
+      "plain": {
+        "en": "What is the student's legal last name?",
+        "es": "¿Cuál es el apellido legal del estudiante?"
+      },
+      "why": {
+        "en": "The school uses it with the first name and birth date to avoid mixing up students.",
+        "es": "La escuela lo usa con el primer nombre y la fecha de nacimiento para no confundir estudiantes."
+      },
+      "help": {
+        "en": "Write both last names if both are part of the legal name.",
+        "es": "Escriba los dos apellidos si ambos forman parte del nombre legal."
+      },
+      "printLabel": {
+        "en": "Student last name",
+        "es": "Apellido del estudiante"
+      }
+    },
+    {
+      "id": "student_birth_date",
+      "type": "date",
+      "section": "student",
+      "required": true,
+      "profileKey": "student.birthDate",
+      "min": "2000-01-01",
+      "max": "2026-12-31",
+      "label": {
+        "en": "Student date of birth",
+        "es": "Fecha de nacimiento del estudiante"
+      },
+      "question": {
+        "en": "Indicate the student's complete date of birth in year, month, day order so age and grade placement can be verified.",
+        "es": "Indique la fecha completa de nacimiento del estudiante en orden de año, mes y día para verificar la edad y el grado."
+      },
+      "plain": {
+        "en": "What is the student's birth date?",
+        "es": "¿Cuál es la fecha de nacimiento del estudiante?"
+      },
+      "why": {
+        "en": "Schools use age and birth records for grade placement and identity matching.",
+        "es": "Las escuelas usan la edad y los documentos de nacimiento para asignar el grado y confirmar la identidad."
+      },
+      "help": {
+        "en": "Use YYYY-MM-DD. Example: 2011-04-18.",
+        "es": "Use AAAA-MM-DD. Ejemplo: 2011-04-18."
+      },
+      "printLabel": {
+        "en": "Birth date",
+        "es": "Fecha de nacimiento"
+      }
+    },
+    {
+      "id": "student_grade",
+      "type": "select",
+      "section": "student",
+      "required": true,
+      "profileKey": "student.grade",
+      "label": {
+        "en": "Grade requested",
+        "es": "Grado solicitado"
+      },
+      "question": {
+        "en": "Select the grade level for which enrollment is being requested for the applicable school term.",
+        "es": "Seleccione el nivel de grado para el cual se solicita la inscripción durante el período escolar correspondiente."
+      },
+      "plain": {
+        "en": "Which grade are you asking for?",
+        "es": "¿Para qué grado está pidiendo inscripción?"
+      },
+      "why": {
+        "en": "The school uses the requested grade to plan classes and review records.",
+        "es": "La escuela usa el grado solicitado para planear clases y revisar expedientes."
+      },
+      "help": {
+        "en": "Choose the grade the student will enter, not the grade just finished.",
+        "es": "Elija el grado al que entrará el estudiante, no el grado que acaba de terminar."
+      },
+      "printLabel": {
+        "en": "Grade requested",
+        "es": "Grado solicitado"
+      },
+      "options": [
+        {
+          "value": "kindergarten",
+          "label": {
+            "en": "Kindergarten",
+            "es": "Kínder"
+          }
+        },
+        {
+          "value": "grade-6",
+          "label": {
+            "en": "Grade 6",
+            "es": "Grado 6"
+          }
+        },
+        {
+          "value": "grade-7",
+          "label": {
+            "en": "Grade 7",
+            "es": "Grado 7"
+          }
+        },
+        {
+          "value": "grade-8",
+          "label": {
+            "en": "Grade 8",
+            "es": "Grado 8"
+          }
+        },
+        {
+          "value": "grade-9",
+          "label": {
+            "en": "Grade 9",
+            "es": "Grado 9"
+          }
+        },
+        {
+          "value": "grade-10",
+          "label": {
+            "en": "Grade 10",
+            "es": "Grado 10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "household_address",
+      "type": "text",
+      "section": "household",
+      "required": true,
+      "profileKey": "household.address",
+      "maxLength": 120,
+      "label": {
+        "en": "Home address",
+        "es": "Dirección del hogar"
+      },
+      "question": {
+        "en": "Provide the complete current residential address where the student ordinarily resides during the school week.",
+        "es": "Proporcione la dirección residencial actual y completa donde el estudiante vive normalmente durante la semana escolar."
+      },
+      "plain": {
+        "en": "Where does the student live most school nights?",
+        "es": "¿Dónde vive el estudiante la mayoría de las noches de escuela?"
+      },
+      "why": {
+        "en": "The school uses it for attendance area, transportation and mail.",
+        "es": "La escuela la usa para el área de asistencia, el transporte y el correo."
+      },
+      "help": {
+        "en": "Include apartment or unit information. This fictional example does not need a city name.",
+        "es": "Incluya el apartamento o la unidad. Este ejemplo ficticio no necesita el nombre de una ciudad."
+      },
+      "printLabel": {
+        "en": "Home address",
+        "es": "Dirección del hogar"
+      }
+    },
+    {
+      "id": "household_size",
+      "type": "text",
+      "section": "household",
+      "required": true,
+      "profileKey": "household.size",
+      "pattern": "^[1-9][0-9]{0,1}$",
+      "maxLength": 2,
+      "label": {
+        "en": "Number of people in the household",
+        "es": "Número de personas en el hogar"
+      },
+      "question": {
+        "en": "State the total number of adults and children who share income, food, housing costs, or care responsibilities in the household.",
+        "es": "Indique el número total de adultos y niños que comparten ingresos, comida, costos de vivienda o responsabilidades de cuidado en el hogar."
+      },
+      "plain": {
+        "en": "How many people live in your household?",
+        "es": "¿Cuántas personas viven en su hogar?"
+      },
+      "why": {
+        "en": "Some forms use household size when they ask about income or services.",
+        "es": "Algunos formularios usan el tamaño del hogar cuando preguntan sobre ingresos o servicios."
+      },
+      "help": {
+        "en": "Count the student, adults and children who live there most of the time.",
+        "es": "Cuente al estudiante, los adultos y los niños que viven allí la mayor parte del tiempo."
+      },
+      "printLabel": {
+        "en": "Household size",
+        "es": "Tamaño del hogar"
+      }
+    },
+    {
+      "id": "household_language",
+      "type": "select",
+      "section": "household",
+      "required": true,
+      "profileKey": "household.primaryLanguage",
+      "label": {
+        "en": "Main language at home",
+        "es": "Idioma principal en casa"
+      },
+      "question": {
+        "en": "Identify the language most commonly used for communication within the household.",
+        "es": "Identifique el idioma que se usa con más frecuencia para comunicarse dentro del hogar."
+      },
+      "plain": {
+        "en": "What language does your household use most?",
+        "es": "¿Qué idioma usa más su hogar?"
+      },
+      "why": {
+        "en": "The school can use it to offer interpretation or translated materials.",
+        "es": "La escuela puede usarlo para ofrecer interpretación o materiales traducidos."
+      },
+      "help": {
+        "en": "Choose the language used most often. You can still ask for help in another language.",
+        "es": "Elija el idioma que se usa más. Todavía puede pedir ayuda en otro idioma."
+      },
+      "printLabel": {
+        "en": "Main home language",
+        "es": "Idioma principal en casa"
+      },
+      "options": [
+        {
+          "value": "english",
+          "label": {
+            "en": "English",
+            "es": "Inglés"
+          }
+        },
+        {
+          "value": "spanish",
+          "label": {
+            "en": "Spanish",
+            "es": "Español"
+          }
+        },
+        {
+          "value": "another",
+          "label": {
+            "en": "Another language",
+            "es": "Otro idioma"
+          }
+        }
+      ]
+    },
+    {
+      "id": "annual_income",
+      "type": "currency",
+      "section": "household",
+      "required": false,
+      "profileKey": "household.annualIncome",
+      "min": 0,
+      "max": 1000000,
+      "label": {
+        "en": "Approximate yearly household income",
+        "es": "Ingreso anual aproximado del hogar"
+      },
+      "question": {
+        "en": "If applicable, provide the total approximate yearly income before taxes for all members of the household.",
+        "es": "Si corresponde, proporcione el ingreso anual total aproximado antes de impuestos de todas las personas del hogar."
+      },
+      "plain": {
+        "en": "About how much money does the household make in one year?",
+        "es": "¿Aproximadamente cuánto dinero gana el hogar en un año?"
+      },
+      "why": {
+        "en": "Some schools or programs use it to decide whether a family qualifies for help.",
+        "es": "Algunas escuelas o programas lo usan para decidir si una familia califica para recibir ayuda."
+      },
+      "help": {
+        "en": "This is optional in the fictional sample. Use a whole-dollar estimate if you do not know the exact amount.",
+        "es": "Esto es opcional en el ejemplo ficticio. Use una cantidad estimada en dólares enteros si no sabe la cantidad exacta."
+      },
+      "printLabel": {
+        "en": "Yearly household income",
+        "es": "Ingreso anual del hogar"
+      }
+    },
+    {
+      "id": "receives_benefits",
+      "type": "yesno",
+      "section": "household",
+      "required": true,
+      "profileKey": "household.receivesBenefits",
+      "label": {
+        "en": "Receives public benefits",
+        "es": "Recibe beneficios públicos"
+      },
+      "question": {
+        "en": "Does any member of the household currently receive public assistance or benefits that the form instructions tell you to report?",
+        "es": "¿Alguna persona del hogar recibe actualmente asistencia pública o beneficios que las instrucciones del formulario le indican reportar?"
+      },
+      "plain": {
+        "en": "Does anyone in the household get benefits the form asks about?",
+        "es": "¿Alguien en el hogar recibe beneficios que el formulario pide reportar?"
+      },
+      "why": {
+        "en": "The answer can affect fee help or meal program processing.",
+        "es": "La respuesta puede afectar la ayuda con cuotas o el proceso del programa de comidas."
+      },
+      "help": {
+        "en": "Answer only for benefits the real form instructions name.",
+        "es": "Responda solo sobre los beneficios que mencionan las instrucciones del formulario real."
+      },
+      "printLabel": {
+        "en": "Benefits reported",
+        "es": "Beneficios reportados"
+      }
+    },
+    {
+      "id": "caregiver_name",
+      "type": "text",
+      "section": "caregiver",
+      "required": true,
+      "profileKey": "caregiver.fullName",
+      "maxLength": 80,
+      "label": {
+        "en": "Caregiver full name",
+        "es": "Nombre completo del cuidador"
+      },
+      "question": {
+        "en": "Provide the full name of the parent, guardian, or caregiver completing this enrollment request.",
+        "es": "Proporcione el nombre completo del padre, la madre, el tutor o el cuidador que completa esta solicitud de inscripción."
+      },
+      "plain": {
+        "en": "What is the full name of the person filling out this form?",
+        "es": "¿Cuál es el nombre completo de la persona que llena este formulario?"
+      },
+      "why": {
+        "en": "The school needs to know who is responsible for the answers.",
+        "es": "La escuela necesita saber quién es responsable de las respuestas."
+      },
+      "help": {
+        "en": "Use the caregiver's name, not the student's name.",
+        "es": "Use el nombre del cuidador, no el nombre del estudiante."
+      },
+      "printLabel": {
+        "en": "Caregiver name",
+        "es": "Nombre del cuidador"
+      }
+    },
+    {
+      "id": "caregiver_phone",
+      "type": "text",
+      "section": "caregiver",
+      "required": true,
+      "profileKey": "caregiver.phone",
+      "pattern": "^[0-9()+ -]{7,20}$",
+      "maxLength": 20,
+      "label": {
+        "en": "Caregiver phone number",
+        "es": "Número de teléfono del cuidador"
+      },
+      "question": {
+        "en": "Provide the best telephone number for reaching the caregiver about enrollment follow-up.",
+        "es": "Proporcione el mejor número de teléfono para comunicarse con el cuidador sobre el seguimiento de la inscripción."
+      },
+      "plain": {
+        "en": "What phone number should the school use to reach you?",
+        "es": "¿Qué número de teléfono debe usar la escuela para comunicarse con usted?"
+      },
+      "why": {
+        "en": "The school may call or text if a document or answer is missing.",
+        "es": "La escuela puede llamar o enviar un mensaje si falta un documento o una respuesta."
+      },
+      "help": {
+        "en": "Digits, spaces, parentheses and hyphens are fine.",
+        "es": "Puede usar números, espacios, paréntesis y guiones."
+      },
+      "printLabel": {
+        "en": "Caregiver phone",
+        "es": "Teléfono del cuidador"
+      }
+    },
+    {
+      "id": "records_release",
+      "type": "yesno",
+      "section": "signing",
+      "required": true,
+      "profileKey": "permissions.recordsRelease",
+      "label": {
+        "en": "Permission to request school records",
+        "es": "Permiso para pedir expedientes escolares"
+      },
+      "question": {
+        "en": "Do you authorize the receiving school to request prior school records for enrollment and placement purposes?",
+        "es": "¿Autoriza a la escuela receptora a pedir expedientes escolares anteriores para fines de inscripción y colocación?"
+      },
+      "plain": {
+        "en": "May the new school ask for the student's old school records?",
+        "es": "¿Puede la nueva escuela pedir los expedientes escolares anteriores del estudiante?"
+      },
+      "why": {
+        "en": "Schools often use old records for grade placement and support services.",
+        "es": "Las escuelas suelen usar expedientes anteriores para asignar el grado y los servicios de apoyo."
+      },
+      "help": {
+        "en": "If you are unsure, ask the real school office before signing.",
+        "es": "Si no está seguro, pregunte a la oficina escolar real antes de firmar."
+      },
+      "printLabel": {
+        "en": "Records permission",
+        "es": "Permiso de expedientes"
+      }
+    },
+    {
+      "id": "signature_date",
+      "type": "date",
+      "section": "signing",
+      "required": true,
+      "profileKey": "signature.date",
+      "min": "2026-01-01",
+      "max": "2026-12-31",
+      "label": {
+        "en": "Date signed",
+        "es": "Fecha de firma"
+      },
+      "question": {
+        "en": "Enter the date on which the caregiver signs this document.",
+        "es": "Escriba la fecha en la que el cuidador firma este documento."
+      },
+      "plain": {
+        "en": "What date are you signing this?",
+        "es": "¿En qué fecha firma esto?"
+      },
+      "why": {
+        "en": "The date shows when the statements were signed.",
+        "es": "La fecha muestra cuándo se firmaron las declaraciones."
+      },
+      "help": {
+        "en": "Use YYYY-MM-DD.",
+        "es": "Use AAAA-MM-DD."
+      },
+      "printLabel": {
+        "en": "Date signed",
+        "es": "Fecha de firma"
+      }
+    },
+    {
+      "id": "signature_name",
+      "type": "signature",
+      "section": "signing",
+      "required": true,
+      "profileKey": "signature.printedName",
+      "minLength": 5,
+      "label": {
+        "en": "Caregiver signature",
+        "es": "Firma del cuidador"
+      },
+      "question": {
+        "en": "Sign or type the full legal name of the caregiver to certify the statements in this document.",
+        "es": "Firme o escriba el nombre legal completo del cuidador para certificar las declaraciones de este documento."
+      },
+      "plain": {
+        "en": "Type your full name as your signature.",
+        "es": "Escriba su nombre completo como firma."
+      },
+      "why": {
+        "en": "The signature shows who certified the answers. A typed demo signature may not be accepted by a real office.",
+        "es": "La firma muestra quién certificó las respuestas. Una oficina real podría no aceptar una firma de demostración escrita a máquina."
+      },
+      "help": {
+        "en": "For a real paper form, sign by hand after printing unless the office says typing is allowed.",
+        "es": "Para un formulario de papel real, firme a mano después de imprimir, a menos que la oficina diga que puede escribirla."
+      },
+      "printLabel": {
+        "en": "Caregiver signature",
+        "es": "Firma del cuidador"
+      }
+    }
+  ],
+  "signingSummary": [
+    {
+      "id": "truth",
+      "text": {
+        "en": "I certify that the answers are true and complete to the best of my knowledge.",
+        "es": "Certifico que las respuestas son verdaderas y completas según mi leal saber y entender."
+      },
+      "plain": {
+        "en": "I promise the answers are true as far as I know.",
+        "es": "Prometo que las respuestas son verdaderas hasta donde yo sé."
+      }
+    },
+    {
+      "id": "proof",
+      "text": {
+        "en": "I understand the school may ask for documents that support these answers.",
+        "es": "Entiendo que la escuela puede pedir documentos que respalden estas respuestas."
+      },
+      "plain": {
+        "en": "The school may ask me to show proof.",
+        "es": "La escuela puede pedirme que muestre pruebas."
+      }
+    },
+    {
+      "id": "not-final",
+      "text": {
+        "en": "I understand that signing this form does not guarantee enrollment, services or benefits.",
+        "es": "Entiendo que firmar este formulario no garantiza inscripción, servicios ni beneficios."
+      },
+      "plain": {
+        "en": "Signing does not mean the answer is yes yet.",
+        "es": "Firmar no significa que la respuesta ya sea sí."
+      }
+    },
+    {
+      "id": "ask",
+      "text": {
+        "en": "I should ask the issuing office before signing if any statement is unclear.",
+        "es": "Debo preguntar a la oficina correspondiente antes de firmar si alguna declaración no está clara."
+      },
+      "plain": {
+        "en": "If I do not understand something, I should ask before I sign.",
+        "es": "Si no entiendo algo, debo preguntar antes de firmar."
+      }
+    }
+  ]
+}

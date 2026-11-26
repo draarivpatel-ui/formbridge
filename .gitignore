@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.impeccable/
+video/*.wav
+video/*.mp4
+video/frame-check/
+video/upload_youtube.mjs
+video/synth_narration.py
+video/build_steps.py
+video/manifest.json

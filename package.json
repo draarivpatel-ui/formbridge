@@ -1,0 +1,17 @@
+{
+  "name": "formbridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline bilingual plain-language helper for paper forms",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test test/*.test.js",
+    "test:browser": "node scripts/browser-check.mjs",
+    "capture": "node scripts/capture-screenshots.mjs"
+  },
+  "license": "MIT"
+}

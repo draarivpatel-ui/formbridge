@@ -1,0 +1,28 @@
+{
+  "student": {
+    "firstName": "Nadia",
+    "lastName": "Example",
+    "birthDate": "2011-04-18",
+    "grade": "grade-9"
+  },
+  "household": {
+    "address": "100 Example Way, Unit 4",
+    "size": "4",
+    "primaryLanguage": "spanish",
+    "annualIncome": 42000,
+    "receivesBenefits": true
+  },
+  "caregiver": {
+    "fullName": "María Example",
+    "relationship": "Parent",
+    "phone": "(555) 010-0142",
+    "email": "caregiver@example.test"
+  },
+  "permissions": {
+    "recordsRelease": true
+  },
+  "signature": {
+    "printedName": "María Example",
+    "date": "2026-11-20"
+  }
+}
