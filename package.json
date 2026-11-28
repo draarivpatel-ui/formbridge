@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node scripts/serve.mjs",
-    "test": "node --test test/*.test.js",
+    "test": "node --test",
     "test:browser": "node scripts/browser-check.mjs",
     "capture": "node scripts/capture-screenshots.mjs"
   },
